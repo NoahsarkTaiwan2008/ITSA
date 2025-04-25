@@ -1,4 +1,4 @@
-// Error
+// WA
 
 #include <iostream>
 #include <vector>
