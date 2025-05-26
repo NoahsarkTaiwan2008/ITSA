@@ -13,14 +13,9 @@ int main() {
     }
 
     for (char ch = 'a'; ch <= 'z'; ch++) {
-        if (n.find(ch) != string::npos) {
-            size_t pos = 0;
-            int count = 0;
-            while ((pos = n.find(ch, pos)) != string::npos) {
-                count++;
-                pos++;
-            }
-            cout << ch << " : " << count << endl;
+        int chc = count(n.begin(), n.end(), ch);
+        if (chc > 0) {
+            cout << ch << " : " << chc << endl;
         }
     }
 }
