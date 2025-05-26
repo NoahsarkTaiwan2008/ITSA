@@ -4,9 +4,8 @@ using namespace std;
 int main() {
     string n;
     getline(cin, n);
-
-    int space = count(n.begin(), n.end(), ' ');
-    cout << space + 1 << endl;
+    
+    cout << count(n.begin(), n.end(), ' ') + 1 << endl;
 
     for (char &i : n) {
         i = tolower(i);
