@@ -11,7 +11,7 @@ int main() {
     size_t n = 0;
     int count = 0;
     while ((n = b.find(a, n)) != string::npos) {
-        ++count;
+        count++;
         n++;
     }
 
